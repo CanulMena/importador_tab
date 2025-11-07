@@ -1,0 +1,15 @@
+<h1>Importar archivo .tab</h1>
+
+<%= form_with url: import_path, local: true, multipart: true do |form| %>
+  <%= form.file_field :file %>
+  <%= form.submit "Subir archivo" %>
+<% end %>
+
+<% if notice %>
+  <p style="color: green;"><%= notice %></p>
+<% elsif alert %>
+  <p style="color: red;"><%= alert %></p>
+<% end %>
+
+<h2>Total de ingresos:</h2>
+<p><%= number_to_currency(@total_ingresos) %></p>
