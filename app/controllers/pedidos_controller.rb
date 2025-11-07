@@ -11,6 +11,11 @@ class PedidosController < ApplicationController
       return
     end
 
+  # Borra todos los registros existentes en la tabla 'pedidos'
+  # Esto asegura que solo los datos del nuevo archivo permanezcan.
+  Pedido.destroy_all
+  # --------------------------------
+
     file = params[:file] # Obtenemos el archivo subido de manera temporal
 
     # 2. Validación de Extensión del Archivo (CSV o TXT)
