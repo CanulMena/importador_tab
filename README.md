@@ -17,21 +17,14 @@ La aplicación está construida en **Ruby on Rails** y es compatible con Linux y
 
 ## Instalación
 
-1. Clona el repositorio:
 
-git clone <URL_DEL_REPOSITORIO>
-cd importador_tab
-
-2. Instala las dependencias:
+1. Instala las dependencias:
 
 bundle install
 
-3. Configura las variables de entorno:
+2. Configura las variables de entorno:
 
-Copia el archivo de template .env.example a .env:
-
-cp .env.example .env
-
+Copia el archivo de template.env y crea un .env:
 
 Abre .env y agrega tu DATABASE_URL de Neon:
 
